@@ -25,6 +25,11 @@ app.get('/apple-app-site-association', (req, res) => {
   });
 });
 
+// Route to serve the apple-app-site-association file
+app.get('/', (req, res) => {
+  res.status(200).send('Bonjour');
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
