@@ -13,7 +13,9 @@
           "NOT /*/exercices/premiere-classe",
           "NOT /*/exercices/culture-litterature-et-francophonie",
           "NOT /*/collection-all",
-          "NOT /*/apprendre-francais/tester-son-niveau"
+          "NOT /*/apprendre-francais/tester-son-niveau",
+
+          "/*/tcf*"
         ]
       },
       {
@@ -27,7 +29,9 @@
           "NOT /*/exercices/premiere-classe",
           "NOT /*/exercices/culture-litterature-et-francophonie",
           "NOT /*/collection-all",
-          "NOT /*/apprendre-francais/tester-son-niveau"
+          "NOT /*/apprendre-francais/tester-son-niveau",
+
+          "/*/tcf*"
         ]
       },
       {
@@ -41,7 +45,9 @@
           "NOT /*/exercices/premiere-classe",
           "NOT /*/exercices/culture-litterature-et-francophonie",
           "NOT /*/collection-all",
-          "NOT /*/apprendre-francais/tester-son-niveau"
+          "NOT /*/apprendre-francais/tester-son-niveau",
+
+          "/*/tcf*"
         ]
       }
     ]
