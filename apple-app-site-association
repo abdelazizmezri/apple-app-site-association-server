@@ -1,51 +1,63 @@
 {
   "applinks": {
-    "apps": [],
     "details": [
       {
-        "appID": "Q5SKYGM6W5.com.fuzyo.ApprendreLeFrancais",
-        "paths": [ 
-          "NOT /*/user/* AND NOT /*/help-all/",
-          "NOT /*/aides/prononciation/",
-          "NOT /*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0/",
-          "NOT /*/exercices/a2-elementaire/",
-          "NOT /*/exercices/premiere-classe/",
-          "NOT /*/exercices/culture-litterature-et-francophonie/",
-          "NOT /*/collection-all/",
-          "NOT /*/apprendre-francais/tester-son-niveau/",
-
-          "/*/tcf*"
-        ]
-      },
-      {
-        "appID": "Q5SKYGM6W5.com.tapptic.tv5.apprendre.release",
-        "paths": [ 
-          "NOT /*/user/* AND NOT /*/help-all/",
-          "NOT /*/help-all/",
-          "NOT /*/aides/prononciation/",
-          "NOT /*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0/",
-          "NOT /*/exercices/a2-elementaire/",
-          "NOT /*/exercices/premiere-classe/",
-          "NOT /*/exercices/culture-litterature-et-francophonie/",
-          "NOT /*/collection-all/",
-          "NOT /*/apprendre-francais/tester-son-niveau/",
-
-          "/*/tcf*"
-        ]
-      },
-      {
-        "appID": "Q5SKYGM6W5.com.tv5monde.apprendre",
-        "paths": [ 
-          "NOT /*/user/* AND NOT /*/help-all/",
-          "NOT /*/aides/prononciation/",
-          "NOT /*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0/",
-          "NOT /*/exercices/a2-elementaire/",
-          "NOT /*/exercices/premiere-classe/",
-          "NOT /*/exercices/culture-litterature-et-francophonie/",
-          "NOT /*/collection-all/",
-          "NOT /*/apprendre-francais/tester-son-niveau/",
-
-          "/*/tcf*"
+        "appIDs": [ "Q5SKYGM6W5.com.fuzyo.ApprendreLeFrancais", "Q5SKYGM6W5.com.tapptic.tv5.apprendre.release", "Q5SKYGM6W5.com.tv5monde.apprendre"],
+        "components": [
+          {
+            "/": "/*/user/*",
+            "exclude": true,
+            "comment": "Matches any URL with a path with /*/user/* format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/help-all",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/help-all and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/aides/prononciation",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/aides/prononciation format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0 format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/exercices/a2-elementaire",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/exercices/a2-elementaire format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/exercices/premiere-classe",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/exercices/premiere-classe format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/exercices/culture-litterature-et-francophonie",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/exercices/culture-litterature-et-francophonie format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/collection-all",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/collection-all format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/apprendre-francais/tester-son-niveau",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/apprendre-francais/tester-son-niveau format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/tcf*",
+            "comment": "Matches any URL with a path that starts with /*/tcf."
+          },
+          {
+            "/": "/help/*",
+            "?": { "articleNumber": "????" },
+            "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+          }
         ]
       }
     ]
