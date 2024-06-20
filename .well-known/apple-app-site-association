@@ -50,13 +50,38 @@
             "comment": "Matches any URL with a path ends with /*/apprendre-francais/tester-son-niveau format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/tcf*",
-            "comment": "Matches any URL with a path that starts with /*/tcf."
+            "/": "/*/",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/ format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/help/*",
-            "?": { "articleNumber": "????" },
-            "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+            "/": "/*/search/site",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/search/site format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/article/apprendre-du-vocabulaire-avec-tv5monde",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/article/apprendre-du-vocabulaire-avec-tv5monde format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/*/vocab/les-medias",
+            "exclude": true,
+            "comment": "Matches any URL with a path ends with /*/vocab/les-medias format and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "*",
+            "?": { "xtor": "*" },
+            "exclude": true,
+            "comment": "Matches any URL that has a query item with name 'xtor'."
+          },
+          {
+            "/": "/*/exercice/*",
+            "comment": "Matches any URL with a path with /*/exercice/* format."
+          },
+          {
+            "/": "/*/tcf*",
+            "comment": "Matches any URL with a path that starts with /*/tcf."
           }
         ]
       }
