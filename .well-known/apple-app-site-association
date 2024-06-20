@@ -5,6 +5,20 @@
         "appIDs": [ "Q5SKYGM6W5.com.fuzyo.ApprendreLeFrancais", "Q5SKYGM6W5.com.tapptic.tv5.apprendre.release", "Q5SKYGM6W5.com.tv5monde.apprendre"],
         "components": [
           {
+            "/": "*",
+            "?": { "xtor": "*" },
+            "exclude": true,
+            "comment": "Matches any URL that has a query item with name 'xtor'."
+          },
+          {
+            "/": "/*/exercice/*",
+            "comment": "Matches any URL with a path with /*/exercice/* format."
+          },
+          {
+            "/": "/*/tcf*",
+            "comment": "Matches any URL with a path that starts with /*/tcf."
+          },
+          {
             "/": "/*/user/*",
             "exclude": true,
             "comment": "Matches any URL with a path with /*/user/* format and instructs the system not to open it as a universal link."
@@ -68,20 +82,6 @@
             "/": "/*/vocab/les-medias",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/vocab/les-medias format and instructs the system not to open it as a universal link."
-          },
-          {
-            "/": "*",
-            "?": { "xtor": "*" },
-            "exclude": true,
-            "comment": "Matches any URL that has a query item with name 'xtor'."
-          },
-          {
-            "/": "/*/exercice/*",
-            "comment": "Matches any URL with a path with /*/exercice/* format."
-          },
-          {
-            "/": "/*/tcf*",
-            "comment": "Matches any URL with a path that starts with /*/tcf."
           }
         ]
       }
