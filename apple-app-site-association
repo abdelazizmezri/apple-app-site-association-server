@@ -5,8 +5,7 @@
       {
         "appID": "Q5SKYGM6W5.com.fuzyo.ApprendreLeFrancais",
         "paths": [ 
-          "NOT /*/user/*",
-          "NOT /*/help-all/",
+          "NOT /*/user/* AND NOT /*/help-all/",
           "NOT /*/aides/prononciation/",
           "NOT /*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0/",
           "NOT /*/exercices/a2-elementaire/",
@@ -21,7 +20,7 @@
       {
         "appID": "Q5SKYGM6W5.com.tapptic.tv5.apprendre.release",
         "paths": [ 
-          "NOT /*/user/*",
+          "NOT /*/user/* AND NOT /*/help-all/",
           "NOT /*/help-all/",
           "NOT /*/aides/prononciation/",
           "NOT /*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0/",
@@ -37,8 +36,7 @@
       {
         "appID": "Q5SKYGM6W5.com.tv5monde.apprendre",
         "paths": [ 
-          "NOT /*/user/*",
-          "NOT /*/help-all/",
+          "NOT /*/user/* AND NOT /*/help-all/",
           "NOT /*/aides/prononciation/",
           "NOT /*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0/",
           "NOT /*/exercices/a2-elementaire/",
