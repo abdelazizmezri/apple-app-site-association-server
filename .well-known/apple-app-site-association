@@ -5,52 +5,52 @@
         "appIDs": [ "Q5SKYGM6W5.com.fuzyo.ApprendreLeFrancais", "Q5SKYGM6W5.com.tapptic.tv5.apprendre.release", "Q5SKYGM6W5.com.tv5monde.apprendre"],
         "components": [
           {
-            "/": "/*/user/*",
+            "/*/": "/user/*",
             "exclude": true,
             "comment": "Matches any URL with a path with /*/user/* format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/help-all",
+            "/*/": "/help-all",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/help-all and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/aides/prononciation",
+            "/*/": "/aides/prononciation",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/aides/prononciation format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0",
+            "/*/": "/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/aides/prononciation-la-consonne-finale-souvent-non-prononcee-0 format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/exercices/a2-elementaire",
+            "/*/": "/exercices/a2-elementaire",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/exercices/a2-elementaire format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/exercices/premiere-classe",
+            "/*/": "/exercices/premiere-classe",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/exercices/premiere-classe format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/exercices/culture-litterature-et-francophonie",
+            "/*/": "/exercices/culture-litterature-et-francophonie",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/exercices/culture-litterature-et-francophonie format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/collection-all",
+            "/*/": "/collection-all",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/collection-all format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/apprendre-francais/tester-son-niveau",
+            "/*/": "/apprendre-francais/tester-son-niveau",
             "exclude": true,
             "comment": "Matches any URL with a path ends with /*/apprendre-francais/tester-son-niveau format and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/*/tcf*",
+            "/*/": "/tcf*",
             "comment": "Matches any URL with a path that starts with /*/tcf."
           },
           {
