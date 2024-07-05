@@ -14,6 +14,11 @@
                   "exclude": true,
                   "comment": "Excludes any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
                },
+							 {
+                  "/": "*?xtor=*",
+                  "exclude": true,
+                  "comment": "Excludes any URL that include the xtor parameter with any value"
+               },
                {
                   "/": "/*/exercices/*",
                   "exclude": true,
