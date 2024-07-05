@@ -7,6 +7,12 @@ const port = process.env.PORT || 3000;
 
 // Middleware to set the correct Content-Type header
 app.use((req, res, next) => {
+  if (req.url === '/apple-app-site-association') {
+    res.setHeader('Content-Type', 'application/json');
+  }
+  next();
+});
+app.use((req, res, next) => {
   if (req.url === '/.well-known/apple-app-site-association') {
     res.setHeader('Content-Type', 'application/json');
   }
@@ -14,6 +20,16 @@ app.use((req, res, next) => {
 });
 
 // Route to serve the apple-app-site-association file
+app.get('/apple-app-site-association', (req, res) => {
+  const filePath = path.join(__dirname, 'apple-app-site-association');
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      res.status(500).send('Error reading file');
+      return;
+    }
+    res.send(data);
+  });
+});
 app.get('/.well-known/apple-app-site-association', (req, res) => {
   const filePath = path.join(__dirname, '.well-known/apple-app-site-association');
   fs.readFile(filePath, 'utf8', (err, data) => {
