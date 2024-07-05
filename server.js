@@ -43,7 +43,7 @@ app.get('/.well-known/apple-app-site-association', (req, res) => {
 
 // Route to serve the apple-app-site-association file
 app.get('/', (req, res) => {
-  res.status(200).send('Bonjour');
+  res.status(200).send('Bonjour Aziz');
 });
 
 app.listen(port, () => {
