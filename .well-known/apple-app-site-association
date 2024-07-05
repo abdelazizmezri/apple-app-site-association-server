@@ -12,28 +12,22 @@
                {
                   "#": "no_universal_links",
                   "exclude": true,
-                  "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
-               },
-								{
-                  "/": "?xtor=",
-                  "exclude": true,
-                  "comment": "Excludes any URL related to an ad campaign"
-               },
-               {
-                  "/": "/*/exercices/*/*",
-                  "comment": "Matches series. The double / at the end is to exclude collection pages"
+                  "comment": "Excludes any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
                },
 							 {
-                  "/": "/*/exercice/*",
-                  "comment": "Matches exercices"
+                  "?": { "xtor": "*" },
+                  "exclude": true,
+                  "comment": "Excludes any URL that include the xtor parameter with any value"
                },
                {
-                  "/": "/*/vocab/*",
-                  "comment": "Matches vocabulary except the home page of vocab"
+                  "/": "/*/exercices/*",
+                  "exclude": true,
+                  "comment": "Excludes any URL that contains exercices in path"
                },
                {
-                  "/": "/*/tcf*",
-                  "comment": "Matches tcf homepage, simulator and traning series"
+                "/": "/*/vocab/les-medias",
+                "exclude": true,
+                "comment": "Excludes rail de mots"
                },
                {
                   "/": "/*/user/*",
@@ -49,6 +43,18 @@
                   "/": "/*/article/*",
                   "exclude": true,
                   "comment": "Exclude article pages"
+               },
+							 {
+                  "/": "/*/exercice/*",
+                  "comment": "Matches exercices"
+               },
+               {
+                  "/": "/*/vocab/*",
+                  "comment": "Matches vocabulary except the home page of vocab"
+               },
+               {
+                  "/": "/*/tcf*",
+                  "comment": "Matches tcf homepage, simulator and traning series"
                }
              ]
            }
